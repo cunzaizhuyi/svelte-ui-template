@@ -10,11 +10,12 @@
 
 ## Usage
 
+### 1.下载项目
 ```javascript
 git clone https://github.com/cunzaizhuyi/svelte-ui-template
 ```
 
-### 开发组件
+### 2.开发组件
 
 ```javascript
 npm run dev
@@ -22,15 +23,18 @@ npm run dev
 本模板已经编写好了两个组件，分别是Counter.svelte和Counter2.svelte.
 你可以继续在lib下面开发新的组件
 
-### 打包组件库
+### 3.打包组件库
 
 组件开发好了，就可以打包组件库了
 ```javascript
 npm run build
 ```
 
-### 测试组件
+### 4.测试组件
 可以在example文件夹下写个HTML文件来测试打包好的组件。
+
+### 5.发布组件
+可以使用npm publish发布自己的跨框架组件库了！
 
 
 ## 相关文档
