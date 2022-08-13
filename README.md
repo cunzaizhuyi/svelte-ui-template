@@ -10,4 +10,7 @@
 
 ## Usage
 
-git clone 'https://github.com/cunzaizhuyi/svelte-ui-template';
+```javascript
+git clone https://github.com/cunzaizhuyi/svelte-ui-template
+```
+
