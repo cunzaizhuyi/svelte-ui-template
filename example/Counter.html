@@ -6,12 +6,12 @@
 </head>
 <body>
 <div id="app"></div>
-    <script type="module">
-      import { Counter } from '../dist/index.es.js';
 
-      const a = new Counter({
-        target: document.getElementById('app'),
-      })
-    </script>
+<script src="../dist/index.umd.js"></script>
+<script >
+  const a = new MyLib.Counter({
+    target: document.getElementById('app'),
+  })
+</script>
 </body>
 </html>
