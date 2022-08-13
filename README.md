@@ -38,4 +38,4 @@ npm run build
 
 
 ## 相关文档
-暂无，回头拍个视频讲一下
+[B站演示视频](https://www.bilibili.com/video/BV1nW4y1h7zw/)
