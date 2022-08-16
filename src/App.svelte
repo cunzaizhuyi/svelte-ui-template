@@ -9,7 +9,7 @@
   </div>
 </main>
 
-<style lang="less">
+<style lang="scss">
   .card{
     background-color: red;
   }
