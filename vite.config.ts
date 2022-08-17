@@ -3,6 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import Unocss from 'unocss/vite'
 import path from 'path';
 import { extractorSvelte } from '@unocss/core'
+import unoCfg from './uno';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -19,6 +20,7 @@ export default defineConfig(({ command, mode }) => {
       plugins: [
         Unocss({
           extractors: [extractorSvelte],
+          ...unoCfg,
         }),
         svelte({}),
       ],
@@ -33,13 +35,14 @@ export default defineConfig(({ command, mode }) => {
         Unocss({
           extractors: [extractorSvelte],
           mode: 'svelte-scoped',
+          ...unoCfg,
         }),
         svelte({}),
       ],
       build: {
         cssCodeSplit: true,
         lib: {
-          entry: path.resolve(__dirname, 'src/lib/index.ts'),
+          entry: path.resolve(__dirname, 'src/components/index.ts'),
           name: 'MyLib',
           fileName: (format) => `index.${format}.js`
         },
