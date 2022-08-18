@@ -7,6 +7,7 @@
 因为svelte编译完的组件其实是js模块，即无框架组件。
 
 技术栈：vite + ts + svelte + scss + unocss
+加了eslint;
 
 ## Usage
 
